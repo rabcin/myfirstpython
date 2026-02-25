@@ -1,1 +1,6 @@
-print("Hello World!")
+import sys
+
+if len(sys.argv) > 1 and sys.argv[1].lower() in {"help", "-h", "--help"}:
+    print("Usage: python helloworld [help]")
+else:
+    print("Hello World!")
